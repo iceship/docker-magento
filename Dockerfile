@@ -28,7 +28,7 @@ RUN tar -zxvf /tmp/magento-1.9.1.1.tar.gz -C /tmp
 
 RUN mv /tmp/magento /var/www
 
-RUN cd /var/www/ && chmod -R o+w media var && chmod o+w app/etc && rm -f magento-*tar.gz
+RUN cd /var/www/ && chmod -R o+w media var && chmod o+w app/etc
 
 ADD mage-cache.xml /var/www/app/etc/mage-cache.xml
 
