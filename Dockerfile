@@ -24,7 +24,7 @@ RUN chkconfig nginx on
 
 RUN cd /tmp && wget http://www.magentocommerce.com/downloads/assets/1.9.1.1/magento-1.9.1.1.tar.gz
 
-RUN cd /tmp && tar -zxvf magento-1.9.1.1.tar.gz
+RUN tar -zxvf /tmp/magento-1.9.1.1.tar.gz -C /tmp
 
 RUN mv /tmp/magento /var/www
 
